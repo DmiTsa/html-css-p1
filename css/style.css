@@ -280,6 +280,8 @@
 
 /* .gift .gift-container //description in waiting section */
 
+/* .gift gift-container .btn //description in promo section*/
+
 .gift .gift-container .gift-img {
   display: block;
   margin: 0 auto;
@@ -294,4 +296,83 @@
   margin-top: 45px;
 }
 
-/* .gift gift-container .btn //description in promo section*/
+/* section webinar */
+
+.webinar {
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 580px;
+  min-height: 430px;
+}
+.webinar .webinar-icon {
+  display: block;
+  margin: 0 auto;
+  width: 340px;
+  height: 200px;
+}
+.webinar .webinar-text-upper {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #252525;
+  margin-top: 35px;
+}
+
+.webinar .webinar-date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #299cbd;
+  margin-top: 30px;
+}
+
+.webinar .webinar-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 25px;
+}
+
+/* footer */
+footer {
+  min-height: 170px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #888888;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+
+footer .link {
+  text-decoration: none;
+  
+}
+
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #666;
