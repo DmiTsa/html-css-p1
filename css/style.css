@@ -63,7 +63,8 @@
   text-transform: uppercase;
 }
 
-.top-promo .content-container .promo-text .btn {
+.top-promo .content-container .promo-text .btn,
+.gift .gift-container .btn {
   color: white;
   font-family: 'RobotoCondensed';
   font-size: 21px;
@@ -72,10 +73,13 @@
   display: inherit;
   margin: 71px auto;
   text-transform: uppercase;
-
   background: linear-gradient(0deg, #2798b9 0%, #3ab6da 100%);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+}
+.gift .gift-container .btn {
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .top-promo .content-container .more {
@@ -98,29 +102,37 @@
   margin: 5px auto;
 }
 
-/* section top-promo */
+/* section waiting */
 
 .waiting {
   background-color: #efefef;
-  height: 600px;
+  min-height: 600px;
   text-align: center;
   padding: 85px 0 75px;
 }
 
-.content-container {
+.waiting .content-container,
+.finish .content-container,
+.gift .gift-container {
   width: 1140px;
   margin: 0 auto;
 }
 
-.waiting .content-container .waiting-title {
+.waiting .content-container .waiting-title,
+.finish .content-container .finish-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   text-transform: uppercase;
+  text-align: center;
+}
+.finish .content-container .finish-title {
+  color: #ffffff;
 }
 
-.waiting .content-container .waiting-devider {
+.waiting .content-container .waiting-devider,
+.finish .content-container .finish-devider {
   display: block;
   margin: 20px auto;
   width: 220px;
@@ -155,3 +167,131 @@
   margin-top: 25px;
   max-width: 100%;
 }
+
+/* section optim */
+.optim {
+  margin-top: 50px;
+}
+
+.optim .optim-content {
+  min-height: 500px;
+  display: block;
+  margin: 0 auto;
+  width: 1380px;
+  background: url('../img/woman_bg.png') left no-repeat;
+}
+
+.optim .optim-content .optim-title {
+  display: inline-block;
+  margin-left: 630px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  width: 750px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #299cbd;
+}
+
+.optim .optim-content .optim-text {
+  margin-left: 630px;
+  width: 750px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+  color: #4a4a4a;
+}
+
+.optim .optim-content .optim-text .mark {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 27px;
+  color: #4a4a4a;
+}
+
+/* section finish */
+.finish {
+  background: url('/img/second_bg.png') center/cover no-repeat;
+  padding-top: 85px;
+  padding-bottom: 70px;
+  min-height: 450px;
+}
+
+/* .finish .content-container //description in waiting section*/
+
+/* .finish .content-container .finish-devider  //description in waiting section*/
+
+/* .finish .content-container .finish-title //description in waiting section*/
+
+.finish .content-container .finish-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.finish .content-container .finish-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 230px;
+  margin-top: 20px;
+}
+
+.finish .content-container .finish-item .round-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b4e2ff;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border-color: #b4e2ff;
+}
+
+.finish .content-container .finish-item .round-bg .finish-item-img {
+  width: 70px;
+  height: 50px;
+}
+
+.finish .content-container .finish-content .finish-item .finish-item-descr {
+  margin-top: 25px;
+  color: #efefef;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  width: 200px;
+}
+
+/* section gift */
+
+.gift {
+  background-color: #efefef;
+  min-height: 630px;
+  padding: 90px 0;
+}
+
+/* .gift .gift-container //description in waiting section */
+
+.gift .gift-container .gift-img {
+  display: block;
+  margin: 0 auto;
+}
+.gift .gift-container .gift-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+/* .gift gift-container .btn //description in promo section*/
